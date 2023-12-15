@@ -1,9 +1,3 @@
-def quickSort(arr,start,end):
-    if(start<=end):
-        ub=partition(arr,start,end)
-        quickSort(arr,start,ub-1)
-        quickSort(arr,ub+1,end)
-
 def partition(arr,start,end):
     pivot=arr[start]
     lower_bound=start+1
