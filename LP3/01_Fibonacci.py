@@ -1,9 +1,5 @@
-def recurs_fibbonacci(n):
-    if n<=1:
-        return n
-    return recurs_fibbonacci(n-1)+recurs_fibbonacci(n-2)
-
 def loop_fibbonacci(n):
+    step_count = 0
     first = 0
     second = 1
     print(first, end=" ")
@@ -13,12 +9,11 @@ def loop_fibbonacci(n):
         first,second = second,third
         print(third,end=" ")
         n-=1
+        step_count+=1
     print()
+    print(step_count)
 
-n=10
-for i in range (n):
-    print(recurs_fibbonacci(i), end = " ")
-print()
+n=int(input("Enter the number ofterms you want in Fibonacci series: "))
 
 loop_fibbonacci(n)
 

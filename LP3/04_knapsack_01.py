@@ -15,9 +15,18 @@ def knapsack_01(values, weights, capacity):
 
     return dp[n][capacity]
 
-values  = [50,100,150,200]
-weights = [8,16,32,40]
-capacity = 64
+n = int(input("Enter number of items: "))
+values = []
+weights = []
+for i in range(n): 
+    w = int(input(f"Enter weight for item {i+1}: "))
+    weights.append(w)
+
+for i in range(n):
+    v = int(input(f"Enter value for item {i+1}: "))
+    values.append(v)
+
+capacity = int(input("Enter Knapsack capacity: "))
 
 max_value = knapsack_01(values, weights, capacity)
 print(f"Maximum value: {max_value}")
