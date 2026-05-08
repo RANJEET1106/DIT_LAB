@@ -1,5 +1,5 @@
 // for execution 
-// g++ hpc1.cpp -fopenmp -o hpc2
+// g++ hpc2.cpp -fopenmp -o hpc2
 // ./hpc2
 
 #include <bits/stdc++.h>
