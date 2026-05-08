@@ -1,3 +1,8 @@
+// For Execution
+// g++ hpc1.cpp -o hpc1
+// ./hpc1
+
+
 #include<bits/stdc++.h>
 #include<omp.h>
 using namespace std;
