@@ -121,3 +121,17 @@ int main()
     cout << endl;
     return 0;
 }
+
+
+
+// Enter number of elements: 5
+// Enter elements:
+// 5 4 1 2 3
+
+// Sequential Bubble Sort Time: 3.36004e-07 sec
+// Parallel Bubble Sort Time: 0.0041331 sec
+// Sequential Merge Sort Time: 6.16e-06 sec
+// Parallel Merge Sort Time: 3.6746e-05 sec
+
+// Sorted Array:
+// 1 2 3 4 5 

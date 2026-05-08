@@ -52,7 +52,12 @@ void dfs(int u,vector<vector<int>>& g,vector<int>& vis){
 int main(){
 
     int n,e,u,v,s;
-    cin>>n>>e;
+    cout<<"Enter number of vertices: ";
+    cin>>n;
+    cout<<"Enter number of edges: ";
+    cin>>e;
+
+    cout<<"Enter the edges"<<endl;
 
     vector<vector<int>> g(n);
 
@@ -62,6 +67,7 @@ int main(){
         g[v].push_back(u);
     }
 
+    cout<<"Enter the starting vertex: ";
     cin>>s;
 
     cout<<"BFS: ";
@@ -77,3 +83,16 @@ int main(){
         dfs(s,g,vis);
     }
 }
+
+
+// Enter number of vertices: 5 
+// Enter number of edges: 5 
+// Enter the edges
+// 0 1
+// 0 2
+// 1 3
+// 1 4
+// 2 4
+// Enter the starting vertex: 0
+// BFS: 0 1 2 3 4 
+// DFS: 0 1 3 4 2 

@@ -1,3 +1,7 @@
+// for execution 
+// g++ hpc3.cpp -fopenmp -o hpc3
+// ./hpc3
+
 #include <iostream>
 #include <vector>
 #include <omp.h>
@@ -36,3 +40,17 @@ int main()
     cout << "\nExecution Time = " << (end - start) << " sec\n";
     return 0;
 }
+
+// Enter number of elements: 5
+// Enter elements:
+// 10
+// 30
+// 51
+// 5
+// 89
+
+// Sum = 185
+// Minimum = 5
+// Maximum = 89
+// Average = 37
+// Execution Time = 0.00211347 sec
